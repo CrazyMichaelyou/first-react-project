@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Hello from './components/Hello';
+import Gallery from './components/gallery'
+import Article from './components/Article'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        {/* {<Hello language="en" name="Michael"/>
+        <Hello language="zh" name="Alex"/>
+        <Hello language="zh" name="Peter"/>} */}
+        { <Gallery/> }
+        <Article/>
     </div>
   );
 }
 
 export default App;
+
+//import react
+//write your functional component
+//return JSX
+//export it 
+//import it to app
